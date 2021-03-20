@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Peanoification</title>
+    <script src="peano.js"></script>
+    <link href="style.css" media="all" rel="stylesheet"
+	  type="text/css">
+  </head>
+  <body>
+    <img id="peano" src="Giuseppe_Peano.jpg" class="invisible">
+    <div id="container">
+    <div class="options">
+    <form id="upload"></form>
+    <input type="file" id="imgload" name="addImage">
+    Show Image <input type="checkbox" id="imgshow" checked>
+    Level <input type="number" id="level" value="3" style="width: 3em;">
+    <a id="download" class="download disabled link">Download SVG</a>
+    </div>
+    <div id="wrapper">
+      <canvas id="imgcvs"></canvas>
+      <canvas id="peanocvs"></canvas>
+    </div>
+    <div id="image" class="invisible">
+    </div>
+    </div>
+    <div id="help" class="help">
+      <h3>Help</h3>
+
+      <p>
+	This site creates a "Peanoified" version of an image.
+	A <a href="https://en.wikipedia.org/wiki/Peano_curve">Peano
+	curve</a> is a type
+	of <a href="https://en.wikipedia.org/wiki/Space-filling_curve">space-filling
+	  curve</a>.
+	Different stages of the construction of a Peano curve have
+	different darknesses, and so by interpolating between the
+	levels a picture can be built up.
+	For more details of the procedure, read the article
+	"<a href="https://chalkdustmagazine.com/features/what-can-you-do-with-this-space/">What
+	can you do with this space?</a>" in
+	the <a href="https://chalkdustmagazine.com">Chalkdust Magazine</a>.
+      </p>
+
+      <p>
+	To make a picture, click the <code>Browse</code> button to
+	upload a picture.
+	This will start the process.
+	You can select the "resolution" of the curve by adjusting the
+	level.
+	The <code>Show Image</code> checkbox controls whether to show
+	the original image behind the curve.
+	Note that the image is shown at the required resolution to define
+	the curve so will look a bit blurred.
+	Once the curve has been created, you can download it as an SVG
+	file or you can right-click on the image to download it as a PNG.
+      </p>
+
+      <p>
+	The code runs in the browser: no data is uploaded to the server.
+      </p>
+
+      <p>
+	The initial image of Guiseppe Peano is taken from his
+	<a href="https://en.wikipedia.org/wiki/Giuseppe_Peano">Wikipedia
+	  page</a>, which refers back to
+	  the <a href="https://mathshistory.st-andrews.ac.uk">Mac
+	  Tutor History of Mathematics Archive</a> site at the University of St Andrews for the
+	<a href="https://mathshistory.st-andrews.ac.uk/Biographies/Peano/pictdisplay/">site with the original image</a>.
+	
+      </p>
+      
+      <p>
+        The code is released under the MIT Licence so if you want to improve it, feel free.
+        It is available <a href="https://github.com/loopspace/Peanoification">on github</a>.
+      </p>
+    </div>
+    <a href="#" id="helplink" class="help link">?</a>
+  </body>
+</html>

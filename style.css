@@ -1,0 +1,74 @@
+.invisible {
+    display: none;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 30px);
+    margin: 0px;
+    padding: 15px;
+}
+
+#wrapper {
+    position: relative;
+    margin: 10px;
+    height: 100%;
+}
+
+#imgcvs, #peanocvs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download {
+    border: 1px solid gray;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.disabled {
+    color: #888;
+}
+
+.help {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    border-radius: 5px 0px 5px 5px;
+    border: 1px solid;
+    padding: 5px;
+    background: #ccc;
+    padding-right: 15px;
+}
+
+#help {
+    display: none;
+    overflow: auto;
+    width: 33%;
+}
+
+#helplink {
+    font-size: 200%;
+    padding-left: 15px;
+    background: #ddd;
+    text-decoration: none;
+    color: black;
+}
+
+#helplink:active, .link:active {
+    background-color: #555;
+}
